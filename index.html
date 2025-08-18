@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calvary Reformed Church</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <nav aria-label="Main navigation">
+        <div class="logoname" onclick="scrollToTop()">
+          <img src="assets/logoname.png" alt="Calvary Reformed Church Logo" />
+        </div>
+        <!-- Hamburger Menu for mobile view -->
+        <div
+          class="hamburger"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ministry">Ministries</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#give">give-offering</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#social-links">Social Links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- home section  -->
+      <section id="home">
+        <h1>Welcome to Calvary Reformed Church</h1>
+        <h3>
+          <i>India Calvary Ministries&reg;</i>
+        </h3>
+        <!-- HTML -->
+        <section class="hero">
+          <div class="overlay"></div>
+          <div class="hero-content">
+            <h1>Sunday Worship - Kannada Service</h1>
+            <p>Youth fellowship starts at 9 AM sharp</p>
+            <a href="#services" class="btn">About Kannada Service</a>
+          </div>
+        </section>
+        <p>
+          We are a Christ-centered church where the Gospel of Jesus Christ is
+          proclaimed with truth and love. As part of Calvary Reformed Church, we
+          gather to worship God, grow in His Word, and serve our community with
+          compassion. Our heart is to glorify God in all we do and to help
+          people find hope and new life in Christ.
+        </p>
+        <a href="#ministry" class="cta-btn">Discover More</a>
+      </section>
+      <!-- about section  -->
+      <section id="about">
+        <br />
+        <h2>About Us</h2>
+        <p>
+          <b
+            >Calvary Reformed Church was established in 2018 by Rev. M
+            Lazarus</b
+          >, with a vision to stand firmly on the truth of God's Word and to
+          spread the light of the Gospel in our community and beyond. We are a
+          family of believers who share life together through worship, prayer,
+          discipleship, and service. Our ministry continues to be a source of
+          spiritual encouragement and a beacon of hope, pointing people to
+          Christ as the only Savior and Lord.
+        </p>
+      </section>
+
+      <!-- ministry section  -->
+      <section id="ministry">
+        <br />
+        <h2>Our Ministries</h2>
+        <p>
+          At India Calvary Ministries, our heart is to serve both the church and
+          the community. We provide a variety of ministries that nurture
+          spiritual growth and encourage active service. Our youth programs
+          inspire the next generation to follow Christ with passion and purpose,
+          while our community service initiatives extend the love of God to
+          those in need. Through Bible study groups, we equip believers with a
+          deeper understanding of God's Word, building strong foundations for a
+          faithful Christian life.
+        </p>
+      </section>
+      <!-- services section  -->
+      <section id="services">
+        <br />
+        <h2>Our Worship Services</h2>
+        <div class="ministries-list">
+          <div class="ministry">
+            <h3>Sunday Kannada Worship</h3>
+            <p>
+              Every Sunday we gather at <b>10:30 am until 12:30 pm </b>as a
+              family of believers to worship the Lord in spirit and truth.
+              <i
+                >Our services are centered on Christ through heartfelt praise,
+                prayer, the reading of Scripture, and the faithful preaching of
+                God’s Word.</i
+              >
+            </p>
+          </div>
+          <div class="ministry">
+            <h3>Youth Ministry</h3>
+            <p>
+              We have youth fellowship at
+              <b
+                >9 am till 10 am every Sunday. And daily youth fellowship at 8
+                pm everyday in Channasandra</b
+              >, Empowering the next generation through faith.
+            </p>
+          </div>
+          <div class="ministry">
+            <h3>Sunday School</h3>
+            <p>
+              We have sunday school for kids from age 4-12
+              <b> every sunday at 9:30 am to 10:15 am.</b> Fun, safe, and
+              engaging Bible lessons for kids of all ages.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="give" class="give-offering">
+        <div class="give-container">
+          <br />
+          <h2>Give / Offering</h2>
+          <p>
+            Your support enables us to continue ministry, reach more lives, and
+            serve the community with the love of Christ.
+          </p>
+
+          <!-- Two-column layout -->
+          <div class="give-flex">
+            <!-- Bank / UPI details -->
+            <div class="bank-details">
+              <p><b>Bank / UPI Details</b></p>
+              <br />
+              <p><strong>UPI ID:</strong> yourupi@bank</p>
+              <p><strong>Account Name:</strong> Your Account Name</p>
+              <p><strong>Account No:</strong> 1234567890</p>
+              <p><strong>Bank Name:</strong> Your Bank Name</p>
+              <p><strong>Bank Address:</strong> Your Bank Address</p>
+              <p><strong>IFSC Code:</strong> ABCD0123456</p>
+            </div>
+
+            <!-- QR Code image -->
+            <div class="upi-qr">
+              <img src="" alt="UPI QR Code" />
+            </div>
+          </div>
+
+          <br /><br />
+          <!-- Button goes to UPI payment -->
+          <a
+            href="upi://pay?pa=yourupi@bank&pn=India%20Calvary%20Ministries&cu=INR"
+            class="give-btn"
+          >
+            Give via UPI
+          </a>
+        </div>
+      </section>
+
+      <!-- location section  -->
+      <section id="location">
+        <br />
+        <h2>Location</h2>
+        <p>
+          We are located in hormavu, bangalore city, easily accessible to all.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.94591539477838!2d77.66845261166095!3d13.027096447237716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1143dba9c78d%3A0xcaf1ff49ae973937!2sCalvary%20Reformed%20Church!5e0!3m2!1sen!2sin!4v1755535759366!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Church Location Map"
+        ></iframe>
+      </section>
+      <!-- contact section  -->
+      <section id="contact">
+        <br />
+        <h2>Contact Us</h2>
+
+        <div id="contact-email">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <p>
+            <a href="mailto:contact.indiacalvaryministries@gmail.com">
+              contact.indiacalvaryministries@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div id="contact-phone">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          <p>
+            <a href="tel:+919008336886">+91 90083 36886</a>
+          </p>
+        </div>
+
+        <p>
+          If you have any questions or would like to get involved, please reach
+          out!
+        </p>
+
+        <div class="form-container">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScVOek5OIakw3BhW0CRPBl5BUbCcNB-Frf8ErXEcQFr5k1ROg/viewform?embedded=true"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
+        </div>
+      </section>
+    </main>
+    <!-- footer section  -->
+    <footer>
+      <div class="footer-container">
+        <div class="contact-info">
+          <div class="item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <p>contact.indiacalvaryministries@gmail.com</p>
+          </div>
+          <div class="item">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            <p>+91 90083 36886</p>
+          </div>
+          <div class="item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <p>Hormavu, Bangalore.</p>
+          </div>
+        </div>
+        <div id="social-links" class="social-links">
+          <a
+            href="https://www.facebook.com/profile.php?id=61579158437940"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <img
+              src="assets/fb.png"
+              alt="Facebook logo"
+              class="social-icon"
+              style="width: 20%"
+            />
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://www.instagram.com/calvaryreformedchurch"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img
+              src="assets/ig.png"
+              alt="Instagram logo"
+              class="social-icon"
+              style="width: 20%"
+            />
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://youtube.com/@calvaryreformedchurch"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <img
+              src="assets/yt.png"
+              alt="YouTube logo"
+              class="social-icon"
+              style="width: 20%"
+            />
+            <span>YouTube</span>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Calvary Reformed Church.</p>
+          <p>All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle hamburger menu
+      function toggleMenu() {
+        const navMenu = document.querySelector("nav ul");
+        navMenu.classList.toggle("show");
+      }
+
+      // Scroll to top when logo is clicked
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Close menu when a link is clicked (for mobile)
+      document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            const navMenu = document.querySelector("nav ul");
+            if (navMenu.classList.contains("show")) {
+              navMenu.classList.remove("show");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
