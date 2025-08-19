@@ -14,7 +14,11 @@ body {
   line-height: 1.8;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Merriweather", serif; /* Headings */
   font-weight: 700;
   color: #2a8cae; /* Similar blue color from your screenshot */
@@ -94,7 +98,6 @@ section h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2rem;
-
 }
 
 section p {
@@ -163,7 +166,7 @@ section p {
 .btn {
   background: #1a4cff;
   color: #fff;
-  padding: 12px 28px;
+  padding: 10px 15px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -222,7 +225,7 @@ section p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:#69a0b3;
+  color: #69a0b3;
 }
 .ministry {
   flex: 1 1 220px;
@@ -247,7 +250,6 @@ section p {
 .give-container h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  
 }
 
 .give-container p {
