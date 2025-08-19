@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://crcindiacalvaryministries.org/sitemap.xml
