@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Worship Service</title>
+    <link rel="stylesheet" href="worship.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <nav aria-label="Main navigation">
+        <div class="logoname" onclick="scrollToTop()">
+          <img src="assets/logoname.png" alt="Calvary Reformed Church Logo" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div>
+        <h1>Worship Service</h1>
+        <p id="service-date">Loading date...</p>
+      </div>
+      <h2>Order of Worship</h2>
+      <ol>
+        <li id="psalm-1"></li>
+        <li>Opening Prayer</li>
+        <br />
+        <li class="song-order" data-index="0">Song 1</li>
+        <li class="song-order" data-index="1">Song 2</li>
+        <li class="song-order" data-index="2">Song 3</li>
+        <br />
+        <li>Congregation stands</li>
+        <li class="song-order" data-index="3">Song 4</li>
+        <br />
+        <li>Worship Prayer</li>
+        <li class="song-order" data-index="4">Song 5</li>
+        <li>Worship Prayer</li>
+        <li class="song-order" data-index="4">Song 5 - stanza 2</li>
+        <li>Worship Prayer</li>
+        <li class="song-order" data-index="4">Song 5 - stanza 3</li>
+        <li>Worship Prayer</li>
+        <li class="song-order" data-index="5">Song 6 - remaining stanza</li>
+        <br />
+        <li id="psalm-2"></li>
+        <li>Congregation sits</li>
+        <br />
+        <li class="song-order" data-index="6">Offering Song</li>
+        <li class="song-order" data-index="7">Thanksgiving Song</li>
+        <br />
+        <li>Announcements + Prayer Requests</li>
+        <li>Prayer for the Offering and Requests</li>
+        <br />
+        <li>Sermon - “Walking in Faith”</li>
+        <li class="song-order" data-index="8">Closing Song</li>
+        <li>Closing Prayer and Benediction</li>
+      </ol>
+
+      <h2>Songs & Lyrics</h2>
+      <div class="songs-container">
+        <!-- Songs will be dynamically loaded here -->
+      </div>
+
+      <h2>Announcements</h2>
+
+      <ol class="announcements-container">
+        <!-- JS will populate announcements here -->
+      </ol>
+    </section>
+
+    <!-- footer section  -->
+    <footer>
+      <div class="footer-container">
+        <div class="contact-info">
+          <div class="item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <p>contact.indiacalvaryministries@gmail.com</p>
+          </div>
+          <div class="item">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            <p>+91 90083 36886</p>
+          </div>
+          <div class="item">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <p>Hormavu, Bangalore.</p>
+          </div>
+        </div>
+        <div id="social-links" class="social-links">
+          <a
+            href="https://www.facebook.com/crcindiacalvaryministries"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <img
+              src="assets/fb.png"
+              alt="Facebook logo"
+              class="social-icon"
+              style="width: 20%"
+            />
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://www.instagram.com/calvaryreformedchurch"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img
+              src="assets/ig.png"
+              alt="Instagram logo"
+              class="social-icon"
+              style="width: 20%"
+            />
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://youtube.com/@calvaryreformedchurch"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <img
+              src="assets/yt.png"
+              alt="YouTube logo"
+              class="social-icon"
+              style="width: 20%"
+            />
+            <span>YouTube</span>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Calvary Reformed Church.</p>
+          <p>All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Dynamic song loader -->
+    <script src="script.js"></script>
+  </body>
+</html>

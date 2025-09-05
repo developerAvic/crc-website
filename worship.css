@@ -1,0 +1,236 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header / Navbar */
+header {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #edf7ff;
+  align-items: center;
+  padding: 4px 10px; /* bigger nav bar */
+}
+
+.logoname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoname img {
+  height: 90px; /* bigger logo */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.logoname img:hover {
+  transform: scale(1.08);
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffffcc; /* translucent white */
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+/* Headings */
+h2 {
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 8px;
+  margin: 25px 0 15px;
+  color: #1e3a8a;
+  font-size: 1.6rem;
+}
+
+/* Order of Worship */
+ol {
+  margin-left: 25px;
+  padding-left: 10px;
+}
+ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Songs */
+.song {
+  margin: 20px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.song:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+.song summary {
+  background: linear-gradient(90deg, #e0e7ff, #f0f4ff);
+  padding: 14px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  transition: background 0.3s ease;
+}
+.song summary:hover {
+  background: linear-gradient(90deg, #d1d9ff, #e0e7ff);
+}
+.song summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Song Animation */
+.song pre {
+  margin: 0;
+  padding: 18px;
+  background: #f9faff;
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-top: 1px solid #cbd5e1;
+
+  /* animation */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.song[open] pre {
+  max-height: 2000px; /* big enough to fit lyrics */
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+  }
+  .logoname img {
+    height: 75px;
+  }
+  .container {
+    margin: 15px;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  ol li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 15px;
+  }
+  .logoname img {
+    height: 65px;
+  }
+  .container {
+    padding: 15px;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  ol li {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* Footer */
+footer {
+  background: #222;
+  color: #f1f1f1;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info .item {
+  margin: 15px;
+}
+
+.contact-info h3 {
+  margin: 10px 0 5px;
+}
+
+.contact-info p {
+  font-size: 16px;
+}
+
+.social-links {
+  text-align: center;
+
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+.social-links img {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  max-width: 100px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbb;
+}

@@ -45,7 +45,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 10px 40px;
 }
 
 nav ul {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 /* Logo */
 .logoname img {
-  height: 50px;
+  height: 70px;
   cursor: pointer;
 }
 
