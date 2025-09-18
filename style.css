@@ -290,22 +290,6 @@ section p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Button */
-.give-btn {
-  display: inline-block;
-  background: #1a4cff;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.give-btn:hover {
-  background: #0d34b6;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
